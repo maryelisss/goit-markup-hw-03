@@ -1,0 +1,210 @@
+:root {
+--main-text-color:#757575;
+--second-text-color:#212121;
+--color-wtite:#FFFFFF;
+--brand-color:#2196F3;
+--color-light-gray: #F5F4FA;
+}
+
+
+body {
+   background: var(--color-wtite);
+   font-family: 'Roboto', sans-serif;
+   color: var(--main-text-color)
+ }
+.list {
+    list-style: none;
+}
+
+/* header */
+
+a {
+    text-decoration: none
+}    
+
+.header-logo {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    color: var(--brand-color) ;
+   }
+.header-logo span {
+    color: #000000;
+}
+.site-nav a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    color: var(--second-text-color)
+}
+.site-nav a:hover, 
+.site-nav a:focus {
+    color: var(--brand-color);
+}
+a.current {
+    color: var(--brand-color);
+}
+.auth-nav {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+.auth-nav:hover,
+.auth-nav:focus {
+    color: var(--brand-color);
+}
+/* main */
+.hero {
+    background-color: #2F303A;
+}
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    color: var(--color-wtite)
+    
+}
+.hero-button {
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    background-color: var(--brand-color);
+    color: var(--color-wtite);
+    cursor: pointer;
+    }
+.hero-button:hover,
+.hero-button:focus{
+background-color: #188CE8;
+}
+.features h2 {
+    display: none;
+}
+
+.features h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--second-text-color)
+    
+}
+.features p {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+.working h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--second-text-color)
+}
+.team {
+    background-color: var(--color-light-gray);
+}
+.team h2  {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--second-text-color);
+    
+}
+.team h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--second-text-color)
+    
+}
+.team p {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+}
+/* footer */
+footer {
+background-color: #2F303A;
+}
+.footer-logo {
+    font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    color: var(--brand-color);
+}
+.footer-logo span  {
+    color: var(--color-wtite);
+}
+address {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+.company-address {
+    color: var(--color-wtite);
+    }
+.company-mail,
+.company-phone {
+    color: rgba(255, 255, 255, 0.6);
+    }
+.company-mail:hover,
+.company-mail:focus,
+.company-phone:hover,
+.company-phone:focus {
+    color: var(--brand-color);
+}
+
+            /* Portfolio */
+
+.filters-list button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+background: var(--color-light-gray);
+cursor: pointer;
+}
+.filters-list button:hover,
+.filters-list button:focus {
+    background: var(--brand-color);
+        color: var(--color-wtite);
+}     
+.works-list H2 {
+font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-text-color)
+    }
+.works-list p {
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+}
+
+
