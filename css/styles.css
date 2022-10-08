@@ -6,21 +6,41 @@
 --color-light-gray: #F5F4FA;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
    background: var(--color-wtite);
    font-family: 'Roboto', sans-serif;
-   color: var(--main-text-color)
- }
-.list {
-    list-style: none;
+   color: var(--main-text-color);
 }
-
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
 /* header */
 
 a {
     text-decoration: none
 }    
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+   }
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
     font-family: 'Raleway';
@@ -30,16 +50,24 @@ a {
         line-height: 1.19;
         letter-spacing: 0.03em;
     color: var(--brand-color) ;
+    margin-left: 215px;
+    margin-right: 93px;
    }
 .header-logo span {
     color: #000000;
+}
+.site-nav {
+    display: flex;
+  
 }
 .site-nav a {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-    color: var(--second-text-color)
+    color: var(--second-text-color);
+    margin-right: 50px ;
+   
 }
 .site-nav a:hover, 
 .site-nav a:focus {
@@ -59,6 +87,13 @@ color: var(--main-text-color);
 .auth-nav:focus {
     color: var(--brand-color);
 }
+.auth-nav:first-of-type {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.auth-nav:last-of-type{
+    margin-right: 215px;
+}
 /* main */
 .hero {
     background-color: #2F303A;
@@ -74,7 +109,7 @@ color: var(--main-text-color);
     
 }
 .hero-button {
-    
+        font-family: 'Roboto';
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -182,6 +217,7 @@ address {
             /* Portfolio */
 
 .filters-list button {
+        font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
