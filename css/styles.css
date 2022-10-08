@@ -6,32 +6,37 @@
 --color-light-gray: #F5F4FA;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 body {
    background: var(--color-wtite);
    font-family: 'Roboto', sans-serif;
    color: var(--main-text-color);
+   /* width: 1200px; */
+   
 }
 ul {
     list-style: none;
     padding-inline-start: 0;
 }
+h1,h2,h3,h4,p,ul {
+    margin: 0;
+}
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 52px 0;
+    
 }
 /* header */
 
 a {
     text-decoration: none
 }    
-header {
+.header {
     display: flex;
     align-items: center;
     height: 80px;
@@ -50,8 +55,7 @@ header {
         line-height: 1.19;
         letter-spacing: 0.03em;
     color: var(--brand-color) ;
-    margin-left: 215px;
-    margin-right: 93px;
+   
    }
 .header-logo span {
     color: #000000;
@@ -97,6 +101,10 @@ color: var(--main-text-color);
 /* main */
 .hero {
     background-color: #2F303A;
+    height: 600px;
+    padding-right: auto; 
+    padding-left: auto;
+
 }
 .hero-title {
         font-weight: 900;
@@ -105,8 +113,10 @@ color: var(--main-text-color);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    color: var(--color-wtite)
-    
+        color: var(--color-wtite);
+        width: 696px;
+       
+ 
 }
 .hero-button {
         font-family: 'Roboto';
@@ -135,7 +145,8 @@ background-color: #188CE8;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--second-text-color)
+        color: var(--second-text-color);
+        padding-bottom: 10px;
     
 }
 .features p {
@@ -143,16 +154,43 @@ background-color: #188CE8;
         line-height: 1.71;
         letter-spacing: 0.03em;
     }
-.working h2 {
+.features ul {
+    display: flex;
+}
+.features li {
+    wigth: 270px;
+    padding-right: 30px;
+    align-items: flex-start;
+}
+.features li:last-of-type{
+    padding-right: 0;
+}
+ .working h2 {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--second-text-color)
+        color: var(--second-text-color);
+        padding-bottom: 50px;
+
 }
+.working ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    }
 .team {
     background-color: var(--color-light-gray);
+}
+.team ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.team li {
+    background-color: var(--color-wtite);
+    border-radius: 0px 0px 4px 4px;
 }
 .team h2  {
         font-weight: 700;
@@ -161,7 +199,7 @@ background-color: #188CE8;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--second-text-color);
-    
+           
 }
 .team h3 {
         font-weight: 500;
@@ -169,27 +207,35 @@ background-color: #188CE8;
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--second-text-color)
+        color: var(--second-text-color);
+        padding-top: 30px;
+        padding-bottom: 10px;
     
 }
 .team p {
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
-        letter-spacing: 0.03em;
+        padding-bottom: 30px;
     
 }
 /* footer */
-footer {
+.footer {
+display: block;
 background-color: #2F303A;
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 215px;
 }
 .footer-logo {
+    display: block;
     font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
     color: var(--brand-color);
+    padding-bottom: 20px;
 }
 .footer-logo span  {
     color: var(--color-wtite);
@@ -216,6 +262,17 @@ address {
 
             /* Portfolio */
 
+.filters-list {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.filters-list li {
+padding-right: 8px;
+}
+.filters-list li:last-of-type {
+    padding-right: 0;
+}
 .filters-list button {
         font-family: 'Roboto';
         font-weight: 500;
@@ -224,23 +281,45 @@ address {
         letter-spacing: 0.03em;
 background: var(--color-light-gray);
 cursor: pointer;
+border-style: none;
+padding: 6px 25px;
+border-radius: 4px;
+
 }
+
 .filters-list button:hover,
 .filters-list button:focus {
     background: var(--brand-color);
         color: var(--color-wtite);
-}     
-.works-list H2 {
-font-weight: 700;
+}  
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: space-between;
+    margin: 0 -15px;
+    
+}
+
+.works-list li {
+flex-basis: 370px;
+border: 1px solid #EEEEEE;
+}
+
+.works-list h2 {
+ font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--second-text-color)
+    color: var(--second-text-color);
+    margin-left: 24px;
     }
+
 .works-list p {
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
+        margin-left: 24px;
 }
 
 
