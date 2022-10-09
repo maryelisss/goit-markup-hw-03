@@ -31,7 +31,7 @@ ul {
   padding: 0 15px;
 }
 .section {
-  padding: 52px 0;
+  padding: 94px 0;
 }
 
 /* header */
@@ -46,7 +46,7 @@ a {
   align-items: center;
   width: 1600px;
   /* height: 80px; */
-  padding: 32px 0 32px 0;
+  padding: 24px 0 24px 0;
   border-width: 0px 0px 1px 0px;
   border-color: #ececec;
   border-style: solid;
@@ -71,7 +71,7 @@ a {
   color: #000000;
 }
 .site-nav {
-  padding-left: 93px;
+  margin-left: 93px;
   display: flex;
   gap: 50px;
 }
@@ -119,7 +119,6 @@ a.current {
   height: 600px;
   width: 1600px;
   padding: auto;
-  margin-top: -54px;
 }
 
 .hero-title {
@@ -131,7 +130,7 @@ a.current {
   text-transform: uppercase;
   color: var(--color-wtite);
   width: 696px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: "Roboto";
@@ -153,6 +152,7 @@ a.current {
 .hero-button:focus {
   background-color: #188ce8;
 }
+
 .features h2 {
   display: none;
 }
@@ -182,6 +182,9 @@ a.current {
 .features li:last-of-type {
   padding-right: 0;
 }
+.working {
+  padding-top: 0;
+}
 .working h2 {
   font-weight: 700;
   font-size: 36px;
@@ -198,7 +201,7 @@ a.current {
 }
 .team {
   background-color: var(--color-light-gray);
-  width: 1600px;
+  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -240,10 +243,10 @@ a.current {
 .footer {
   display: block;
   background-color: #2f303a;
-  width: 1600px;
+  /* width: 1600px; */
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
 }
 .footer-logo {
   display: block;
@@ -264,6 +267,12 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer li {
+  margin-bottom: 9px;
+}
+.footer li:last-of-type {
+  margin-bottom: 0;
+}
 .company-address {
   color: var(--color-wtite);
 }
@@ -283,7 +292,7 @@ address {
 .filters-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .filters-list li {
   padding-right: 8px;
@@ -316,10 +325,14 @@ address {
   align-content: space-between;
   margin: 0 -15px;
 }
-
 .works-list li {
   flex-basis: 370px;
-  border: 1px solid #eeeeee;
+}
+.works-list div {
+  padding: 20px 0 20px 24px;
+  border-width: 0px 1px 1px 1px;
+  border-color: #eeeeee;
+  border-style: solid;
 }
 
 .works-list h2 {
@@ -328,12 +341,10 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
-  margin-left: 24px;
 }
 
 .works-list p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-left: 24px;
 }
