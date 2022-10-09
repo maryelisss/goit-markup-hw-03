@@ -10,7 +10,8 @@ body {
   background: var(--color-wtite);
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
-  /* width: 1200px; */
+  width: 1600px;
+  margin: auto;
 }
 ul {
   list-style: none;
@@ -39,17 +40,22 @@ ul {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* header */
 
 .header {
-  display: flex;
-  align-items: center;
-  width: 1600px;
-  /* height: 80px; */
   padding: 24px 0 24px 0;
   border-width: 0px 0px 1px 0px;
   border-color: #ececec;
   border-style: solid;
+}
+.header div {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -65,7 +71,6 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--brand-color);
-  padding-left: 215px;
 }
 .header-logo span {
   color: #000000;
@@ -81,7 +86,6 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-  /* margin-right: 50px; */
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -201,7 +205,6 @@ a.current {
 }
 .team {
   background-color: var(--color-light-gray);
-  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -243,10 +246,8 @@ a.current {
 .footer {
   display: block;
   background-color: #2f303a;
-  /* width: 1600px; */
   padding-top: 60px;
   padding-bottom: 60px;
-  /* padding-left: 215px; */
 }
 .footer-logo {
   display: block;
