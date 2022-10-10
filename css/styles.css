@@ -10,8 +10,8 @@ body {
   background: var(--color-wtite);
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
-  width: 1600px;
-  margin: auto;
+  /* width: 1600px;
+  margin: auto; */
 }
 ul {
   list-style: none;
@@ -26,8 +26,8 @@ ul {
   margin: 0;
 }
 .container {
-  width: 1200px;
-  /* max-width: 1200px; */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -48,12 +48,11 @@ img {
 /* header */
 
 .header {
-  padding: 24px 0 24px 0;
   border-width: 0px 0px 1px 0px;
   border-color: #ececec;
   border-style: solid;
 }
-.header div {
+.header > div {
   display: flex;
   align-items: center;
 }
@@ -81,11 +80,13 @@ img {
   gap: 50px;
 }
 .site-nav a {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  padding: 32px 0;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -95,37 +96,42 @@ a.current {
   color: var(--brand-color);
 }
 .auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav a {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  padding: 32px 0;
 }
-.auth-nav:hover,
-.auth-nav:focus {
+.auth-nav a:hover,
+.auth-nav a:focus {
   color: var(--brand-color);
 }
-.auth-nav:first-of-type {
-  margin-left: auto;
+.auth-nav a:first-of-type {
   margin-right: 50px;
-}
-.auth-nav:last-of-type {
-  margin-right: 215px;
 }
 
 /* main */
 .hero {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   align-items: center;
   background-color: #2f303a;
-  height: 600px;
-  width: 1600px;
-  padding: auto;
+  /* height: 600px; 
+  width: 1600px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
+  display: block;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -135,15 +141,14 @@ a.current {
   color: var(--color-wtite);
   width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--brand-color);
   color: var(--color-wtite);
@@ -151,6 +156,8 @@ a.current {
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -168,7 +175,7 @@ a.current {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .features p {
   font-size: 14px;
@@ -196,7 +203,7 @@ a.current {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .working ul {
   display: flex;
@@ -217,6 +224,7 @@ a.current {
   background-color: var(--color-wtite);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team h2 {
   font-weight: 700;
   font-size: 36px;
@@ -226,6 +234,10 @@ a.current {
   color: var(--second-text-color);
   padding-bottom: 50px;
 }
+.team div {
+  padding: 30px;
+  /* padding-bottom: 30px; */
+}
 .team h3 {
   font-weight: 500;
   font-size: 16px;
@@ -233,14 +245,12 @@ a.current {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 30px;
 }
 /* footer */
 .footer {
@@ -261,6 +271,7 @@ a.current {
 }
 .footer-logo span {
   color: var(--color-wtite);
+  margin-bottom: 20px;
 }
 address {
   font-style: normal;
@@ -268,10 +279,10 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer li {
+.footer-link {
   margin-bottom: 9px;
 }
-.footer li:last-of-type {
+.footer-link:last-of-type {
   margin-bottom: 0;
 }
 .company-address {
@@ -296,10 +307,10 @@ address {
   margin-bottom: 50px;
 }
 .filters-list li {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 .filters-list li:last-of-type {
-  padding-right: 0;
+  margin-right: 0;
 }
 .filters-list button {
   font-family: "Roboto";
@@ -322,14 +333,18 @@ address {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  align-content: space-between;
-  margin: 0 -15px;
+  /* gap: 30px; */
+  /* align-content: space-between; */
+  margin: -15px;
 }
-.works-list li {
-  flex-basis: 370px;
+.work-iteam {
+  flex-basis: calc((1170px - 60px) / 3);
+  /* width: 370px; */
+  /* flex-basis: 370px; */
+  margin: 15px;
 }
-.works-list div {
+.work-iteam div {
+  /* width: auto; */
   padding: 20px 0 20px 24px;
   border-width: 0px 1px 1px 1px;
   border-color: #eeeeee;
@@ -342,6 +357,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
+  margin-bottom: 4px;
 }
 
 .works-list p {
