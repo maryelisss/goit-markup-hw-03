@@ -118,13 +118,8 @@ a.current {
 
 /* main */
 .hero {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   align-items: center;
   background-color: #2f303a;
-  /* height: 600px; 
-  width: 1600px; */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -164,11 +159,11 @@ a.current {
   background-color: #188ce8;
 }
 
-.features h2 {
+.features-title {
   display: none;
 }
 
-.features h3 {
+.features-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -177,26 +172,26 @@ a.current {
   color: var(--second-text-color);
   margin-bottom: 10px;
 }
-.features p {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.features ul {
+.features-list {
   display: flex;
   gap: 30px;
 }
-.features li {
+.features-item {
   width: 270px;
   align-items: flex-start;
 }
-.features li:last-of-type {
+.features-item:last-of-type {
   padding-right: 0;
 }
 .working {
   padding-top: 0;
 }
-.working h2 {
+.working-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -205,7 +200,7 @@ a.current {
   color: var(--second-text-color);
   margin-bottom: 50px;
 }
-.working ul {
+.working-list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -215,30 +210,30 @@ a.current {
   margin-left: auto;
   margin-right: auto;
 }
-.team ul {
+.team-list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.team li {
+.team-item {
   background-color: var(--color-wtite);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team h2 {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.team div {
+.team-subtitle {
   padding: 30px;
   /* padding-bottom: 30px; */
 }
-.team h3 {
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -247,7 +242,7 @@ a.current {
   color: var(--second-text-color);
   margin-bottom: 10px;
 }
-.team p {
+.team-position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -273,7 +268,7 @@ a.current {
   color: var(--color-wtite);
   margin-bottom: 20px;
 }
-address {
+.footer-links {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -306,13 +301,13 @@ address {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filters-list li {
+.filters-item {
   margin-right: 8px;
 }
-.filters-list li:last-of-type {
+.filters-item:last-of-type {
   margin-right: 0;
 }
-.filters-list button {
+.filters-botton {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -325,8 +320,8 @@ address {
   border-radius: 4px;
 }
 
-.filters-list button:hover,
-.filters-list button:focus {
+.filters-botton:hover,
+.filters-botton:focus {
   background: var(--brand-color);
   color: var(--color-wtite);
 }
@@ -337,13 +332,13 @@ address {
   /* align-content: space-between; */
   margin: -15px;
 }
-.work-iteam {
-  flex-basis: calc((1170px - 60px) / 3);
+.work-item {
+  flex-basis: calc((100% - 90px) / 3);
   /* width: 370px; */
   /* flex-basis: 370px; */
   margin: 15px;
 }
-.work-iteam div {
+.work-card {
   /* width: auto; */
   padding: 20px 0 20px 24px;
   border-width: 0px 1px 1px 1px;
@@ -351,7 +346,7 @@ address {
   border-style: solid;
 }
 
-.works-list h2 {
+.work-card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -360,7 +355,7 @@ address {
   margin-bottom: 4px;
 }
 
-.works-list p {
+.work-card-subtitle {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
